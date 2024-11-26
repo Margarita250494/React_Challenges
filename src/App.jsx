@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import { ProgressBar } from "./components/ProgressBar";
 import { ShowHideButton } from "./components/ShowHideButton";
 import { Timer } from "./components/Timer";

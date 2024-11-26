@@ -47,6 +47,7 @@ p{
 .challenges{
   display: flex;
   flex-flow: row wrap;
+  gap: 30px;
   
 }
 .challenge{
@@ -54,6 +55,8 @@ p{
   border: #4b4444 1px solid;
   width: fit-content;
   border-radius: 20px;
+  
+
 }
 .center{
   justify-content: center;
@@ -64,6 +67,31 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+.container{
+  width: 50vw;
+  height: 30px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #cdcdcd;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 30px;
+}
+.innerContainer{
+  height: 100%;
+  display: grid;
+  border-style: none;
+  place-items: center;
+  border-radius: 20px;
+  margin: auto;
+  background: linear-gradient(to left, #bf597b, #d17053);
+  color: rgb(232, 228, 228);
+  position: absolute;
+  transition: 1.5s ease 0.3s;
+  z-index: 100;
+}
+
 
 button {
   border-radius: 8px;

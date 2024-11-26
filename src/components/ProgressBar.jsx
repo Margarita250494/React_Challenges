@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ProgressBar = () => {
+export const ProgressBar = () => {
   const [value, setValue] = useState(10);
   const [text, setText] = useState("");
 
@@ -37,5 +37,3 @@ const ProgressBar = () => {
     </section>
   );
 };
-
-export default ProgressBar;

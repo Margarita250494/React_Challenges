@@ -1,8 +1,7 @@
-
 import { useRef, useState } from "react";
 
-const Timer = () => {
-    const intervalId = useRef(null);
+export const Timer = () => {
+  const intervalId = useRef(null);
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
 
@@ -26,18 +25,16 @@ const Timer = () => {
   };
   return (
     <section className="challenge ">
-          <h2>Timer</h2>
-          <div className="horizont center">
-            <p>{Math.floor(time / 60)} min</p> {/*sec to min */}
-            <p>{time % 60} sec</p>
-          </div>
-          <div className="horizont">
-            <button onClick={start}>Start</button>
-            <button onClick={stop}>Stop</button>
-            <button onClick={reset}>Reset</button>
-          </div>
-        </section>
-  )
-}
-
-export default Timer
+      <h2>Timer</h2>
+      <div className="horizont center">
+        <p>{Math.floor(time / 60)} min</p> {/*sec to min */}
+        <p>{time % 60} sec</p>
+      </div>
+      <div className="horizont">
+        <button onClick={start}>Start</button>
+        <button onClick={stop}>Stop</button>
+        <button onClick={reset}>Reset</button>
+      </div>
+    </section>
+  );
+};

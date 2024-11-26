@@ -1,10 +1,9 @@
 import "./App.css";
-import ShowHideButton from "./components/ShowHideButton";
-import Timer from "./components/Timer";
-import ProgressBar from "./components/ProgressBar";
+import { ProgressBar } from "./components/ProgressBar";
+import { ShowHideButton } from "./components/ShowHideButton";
+import { Timer } from "./components/Timer";
 
 function App() {
-  
   return (
     <>
       <h1>React Challenges</h1>

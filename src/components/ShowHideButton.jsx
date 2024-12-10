@@ -8,7 +8,7 @@ export const ShowHideButton = () => {
   return (
     <section className="challenge">
       <h2>Show/Hidden button</h2>
-      <div className="horizont">
+      <div>
         <button onClick={toogleButton}>{isVisible ? "Show" : "Hidden"}</button>
         {isVisible && <p>Welcome!</p>}
         {/*<p>{isVisible && 'Welcome!'}</p> */}

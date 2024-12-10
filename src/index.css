@@ -93,6 +93,11 @@ h1 {
   z-index: 100;
 }
 
+.request{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
 
 button {
   border-radius: 8px;

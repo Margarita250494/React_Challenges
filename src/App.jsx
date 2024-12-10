@@ -2,6 +2,8 @@ import "./index.css";
 import { ProgressBar } from "./components/ProgressBar";
 import { ShowHideButton } from "./components/ShowHideButton";
 import { Timer } from "./components/Timer";
+import { SubmitFormData } from "./components/SubmitForm/SubmitFormData";
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <ShowHideButton />
         <Timer />
         <ProgressBar />
+        <SubmitFormData />
       </div>
     </>
   );

@@ -28,7 +28,7 @@ export const ProgressBar = () => {
         </div>
       </div>
       <div className="horizont center">
-        <form>
+        <form className="inputPercentage">
           <label htmlFor="html">Input Percentage:</label>
           <input id="html" type="number" onChange={inputValue} />
         </form>

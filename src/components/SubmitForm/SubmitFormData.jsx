@@ -10,7 +10,7 @@ export const SubmitFormData = () => {
   return (
     <section className="challenge ">
       <h2>Submit Form Data</h2>
-      <div>
+      <div className="submitSection">
         <form onSubmit={submit}>
             <FormInput
               id="userName"
@@ -31,10 +31,10 @@ export const SubmitFormData = () => {
               type="number"
               value={formData.age}
               onChange={handleAgeChange} />    
-            <input type="submit" value="Submit"  />
+            <input className="submitButton" type="submit" value="Submit"  />
         </form>
         {submittedData && (
-            <div >
+            <div>
             <h4>Request Sent to DB with below request data</h4>
             <ul className="request">
                 <li>User Name: {submittedData.userName} </li>

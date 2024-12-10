@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const FormInput = ({ id, label, type = "text", name, value, onChange }) => {
   return (
-    <>
+    <div className='formDiv'>
       <label htmlFor={id}>{label}</label> <br />
       <input
         id = {id}
@@ -12,7 +12,7 @@ export const FormInput = ({ id, label, type = "text", name, value, onChange }) =
         value = {value}
         onChange = {onChange}
       /><br />
-    </>
+    </div>
   );
 };
 

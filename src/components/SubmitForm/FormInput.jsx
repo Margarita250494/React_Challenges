@@ -17,10 +17,10 @@ export const FormInput = ({ id, label, type = "text", name, value, onChange }) =
 };
 
 FormInput.propTypes = {
-    id: PropTypes.string,
-    label: PropTypes.string,
+    id: PropTypes.string.isRequired, // обязательный пропс
+    label: PropTypes.string.isRequired, // обязательный пропс
     type: PropTypes.string,
-    name: PropTypes.string,
-    value: PropTypes.string,
-    onChange: PropTypes.func,
+    name: PropTypes.string.isRequired, // обязательный пропс
+    value: PropTypes.string.isRequired, // обязательный пропс
+    onChange: PropTypes.func.isRequired, // обязательный пропс
   };

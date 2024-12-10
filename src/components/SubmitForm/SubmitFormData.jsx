@@ -1,42 +1,12 @@
-import { useState } from "react"
+
 import { FormInput } from "./FormInput";
+import { useFormData } from "./useFormData";
 
 
 export const SubmitFormData = () => {
-    
-  const [submittedData, setSubmittedData] = useState(null);
-
-    const [formData, setFormData] = useState({
-      userName: "",
-      fullName: "",
-      age: ""
-    })
-
-    const handleChange = (e) => {
-      const {name, value} = e.target;
-      setFormData({
-        ...formData,
-        [name]:value,
-      })
-    }
-
-    const submit = (event) =>{
-        event.preventDefault();
-        setSubmittedData(formData);
-        setFormData({ userName: "", fullName: "", age: "" });
-    }
-
-    const handleAgeChange = (e) => {
-      const { value } = e.target;
-      if (/^\d*$/.test(value)) {
-        setFormData({
-          ...formData,
-          age: value,
-        });
-      }
-    };
-
-   
+  
+  const {submittedData, formData, handleChange, submit, handleAgeChange} = useFormData()
+ 
   return (
     <section className="challenge ">
       <h2>Submit Form Data</h2>
@@ -57,6 +27,7 @@ export const SubmitFormData = () => {
             <FormInput
               id="age"
               label = "Age:"
+              name="age"
               type="number"
               value={formData.age}
               onChange={handleAgeChange} />    
